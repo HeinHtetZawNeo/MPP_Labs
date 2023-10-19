@@ -1,18 +1,18 @@
-package Lab8;
+package labs.day8Lab.Prob1;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiFunction;
 
 public class Problem1 {
-	
-	public static void main(String[]args) {
-		BiFunction<Double,Double,List<Double>> bifunc= (x,y) -> {
+
+	public static void main(String[] args) {
+		BiFunction<Double, Double, List<Double>> bifunc = (x, y) -> {
 			List<Double> list = new ArrayList<>();
-			list.add(Math.pow(x,y));
+			list.add(Math.pow(x, y));
 			list.add(x * y);
 			return list;
-			};
-			System.out.println(bifunc.apply(2.0,3.0));
+		};
+		System.out.println(bifunc.apply(2.0, 3.0));
 	}
 }

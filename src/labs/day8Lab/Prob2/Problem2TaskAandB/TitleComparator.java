@@ -1,4 +1,4 @@
-package Lab8.Problem2TaskAandB;
+package labs.day8Lab.Prob2.Problem2TaskAandB;
 
 import java.util.Comparator;
 

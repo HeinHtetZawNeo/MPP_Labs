@@ -1,4 +1,4 @@
-package Lab8.Problem2TaskC;
+package labs.day8Lab.Prob2.Problem2TaskC;
 
 import java.util.ArrayList;
 import java.util.Collections;
