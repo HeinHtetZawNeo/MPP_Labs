@@ -1,0 +1,11 @@
+1-B 
+Problem -> The equals method in Employee has been incorrectly overridden. Therefore, when the listsAreEqual method checks the solution, it uses the original Object implementation of equals, which gives incorrect results.
+Solution -> Change public boolean equals(Employee e) to public boolean equals(Object obj)
+
+1C
+Problem -> HashCode has not been overridden in Employee, to make the HashMap track duplicates.
+Solution -> Add HashCode method under Employee
+
+1D
+Problem -> equals and hashCode have been implemented correctly in Employee. However, values in the HashMap are modified while it is updated, leading to incorrect results.
+Solution -> all attribute that are used in the hashCode method should be immutable.
