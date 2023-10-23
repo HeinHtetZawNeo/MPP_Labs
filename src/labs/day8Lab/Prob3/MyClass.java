@@ -2,6 +2,7 @@ package labs.day8Lab.Prob3;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.function.Predicate;
 
 public class MyClass {
 	int x;
@@ -15,7 +16,10 @@ public class MyClass {
 // testing method to check the equality
 	public void myMethod(MyClass cl) {
 		Function<MyClass, Boolean> myFunction = (x) -> this.equals(x);
-		System.out.println(myFunction.apply(cl));
+		//System.out.println(myFunction.apply(cl));
+		
+		Predicate<MyClass> myPredicate = this::equals;
+		System.out.println(myPredicate.test(cl));
 	}
 
 	@Override
