@@ -27,10 +27,10 @@ public class Employee {
 		return "(" + name + ", " + salary + ")";
 	}
 	
-	@Override
-	public int hashCode() {
-		return Objects.hash(name, salary);
-	}
+//	@Override
+//	public int hashCode() {
+//		return Objects.hash(name, salary);
+//	}
 
 	@Override
 	public boolean equals(Object obj) {

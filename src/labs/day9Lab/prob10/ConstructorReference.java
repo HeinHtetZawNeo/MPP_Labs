@@ -63,14 +63,17 @@ public class ConstructorReference {
 
 		// Query 2 : Create an object by choosing suitable Interface to the specified
 		// constructors(Totally 3 constructors)
-		// using fouth type of Method Reference ClassName::new. Then print the object
+		// using fourth type of Method Reference ClassName::new. Then print the object
 		// status
 
-		Function<Human[], Stream<Human>> func = Arrays::stream;
+		Function<String, Human> function = Human::new;
+		Human ob = function.apply("Mr.A");
+		System.out.println(ob);
 
 		// Query 3 : Count the male candidates whose age is more than 30
-
-		long counter = func.apply(list).filter(x -> x.getGender().equals("Male")).filter(x -> x.getAge() > 30).count();
+		Function<Human[], Stream<Human>> function2 = Arrays::stream;
+		long counter = function2.apply(list).filter(x -> x.getGender().equals("Male")).filter(x -> x.getAge() > 30)
+				.count();
 		System.out.println(counter);
 
 	}
